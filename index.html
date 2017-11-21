@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dashboard">
+    <meta name="author" content="Robert Tavares">
+    <!-- Bootstrap Core CSS/JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom CSS/Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Header Title Section -->
+      <section>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-9">
+            <span class="dashboard-title">High-School Diploma 2017</span>
+            <span class="badge">14</span>
+            <span class="info-text">Credits Left!</span>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="float-right">
+              <div class="progress-full">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="30" style="width:47%">
+                  </div> 
+                </div>
+              </div>
+              <div class="progress-indicators">
+                <div class="progress progress-no-border">
+                  <div><span class="progress-color-text">14</span> / 30
+                  </div> 
+                </div>
+              </div>
+            </div> 
+          </div>  
+        </div>
+      </section>
+      <!-- Requirements Section -->
+      <section>
+        <div class="row requirements-wrap">
+          <div class="">    
+            <div class="col-xs-12 col-sm-5 col-md-4">
+              <div class="requirements-text">Requirements</div>                            
+                <div class="dropdown">
+                  <button class="btn btn-default btn-requirements dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Show All
+                  <span><i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></span></button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Year 9</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Year 10</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Year 11</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Year 12</a></li>
+                  </ul>
+                </div>
+              </div>
+            <div class="form-container col-xs-12 col-sm-7 col-md-8">
+              <form>
+                <div class="checkbox-title-text"><span class="checkbox-separator"></span>Credits</div>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value=""><span class="checkbox-text">All</span>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value=""><span class="checkbox-text">Earned</span>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value=""><span class="checkbox-text">Planned</span>
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value=""><span class="checkbox-text">Remaining</span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Available Slots Section -->
+      <section>
+        <div class="row">
+          <div class="col-x-12 col-md-3">
+            <div class="background-section-header">
+              <h5 class="available-slot-title">YEAR 9 (next year)</h5>
+              <p>1 credit planned</p>
+            </div>
+            <div class="available-slot-wrap">
+              <ul>
+                <li class="subject-selected">English
+                  <div><span class="subject-small">ENG1P1</span> <span class="subject-desc">| English 9</span><span class="subject-credit">1 cr.</span></div>
+                </li>
+                <li class="subject-selected">Functions<span class="subject-alert">!</span>
+                  <div><span class="subject-small">MAT1U1</span> <span class="subject-desc">| Math 9</span><span class="subject-credit">1 cr.</span></div>
+                </li>
+                <li id="subject-science-choose" class="subject-choose"><span class="subject-add">+</span>Add Science 9
+                  <div><span class="subject-desc">1 cr.</span></div>
+                </li>
+                <li id="subject-science-selected" class="subject-selected">Science
+                  <div><span class="subject-small">SCI1P1</span> <span class="subject-desc">| Science 9</span><span class="subject-credit">1 cr.</span></div>
+                </li>
+                <li class="subject-choose"><span class="subject-add">+</span>Add Geography
+                  <div><span class="subject-desc">1 cr.</span></div>
+                </li>
+                <li class="subject-choose"><span class="subject-add">+</span>Add French
+                  <div><span class="subject-desc">1 cr.</span></div>
+                </li>
+                <li class="subject-choose"><span class="subject-add">+</span>Add Elective
+                  <div><span class="subject-desc">16 credits remaining</span></div>
+                </li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+              </ul>
+            </div>
+            <div class="button-submit">
+              <div>
+                <button type="button" class="btn btn-primary btn-lg center-block">Ready To Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-x-12 col-md-3">
+            <div class="background-section-header-secondary">
+              <h5 class="available-slot-title">YEAR 10</h5>
+              <p>0 credits earned</p>
+            </div>
+              <ul>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+              </ul>
+            </div>
+          <div class="col-x-12 col-md-3">
+            <div class="background-section-header-secondary">
+              <h5 class="available-slot-title">YEAR 11</h5>
+              <p>0 credits earned</p>
+            </div>
+              <ul>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+              </ul>
+            </div>
+          <div class="col-x-12 col-md-3">
+            <div class="background-section-header-secondary">
+              <h5 class="available-slot-title">YEAR 12</h5>
+              <p>0 credits earned</p>
+            </div>
+              <ul>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+                <li class="available-slot">Available Slot</li>
+              </ul>
+            </div>
+        </div>
+      </section>
+    </div>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
